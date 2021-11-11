@@ -9,14 +9,5 @@ class Constants {
 
         const val API_ENDPOINT: String = "api/users"
 
-        const val ORDER_ASCENDING = "ASC"
-        const val ORDER_DESCENDING = "DESC"
-
-        const val ORDER_BY_FIRSTNAME = "first_name"
-        const val ORDER_BY_LASTNAME = "last_name"
-
-        const val SHAREDPREFRENCES_NAME = "dmartappsharedpreferences"
-        const val PREF_ORDER = "pref_order"
-        const val PREF_ORDER_BY = "pref_order_by"
     }
 }

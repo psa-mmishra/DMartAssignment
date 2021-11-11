@@ -25,32 +25,6 @@ class Utils {
             return LinearLayoutManager(context, RecyclerView.VERTICAL, false)
         }
 
-        private fun getSharedPreferences(context: Context): SharedPreferences {
-            return context.getSharedPreferences(Constants.SHAREDPREFRENCES_NAME, MODE_PRIVATE)
-        }
-
-        fun setOrderBy(context: Context, value: String) {
-            getSharedPreferences(context)
-                .edit()
-                .putString(Constants.PREF_ORDER_BY, value)
-                .apply()
-        }
-
-        fun getOrderBy(context: Context): String {
-            return getSharedPreferences(context).getString(Constants.PREF_ORDER_BY, "id")!!
-        }
-
-        fun setOrder(context: Context, value: String) {
-            getSharedPreferences(context)
-                .edit()
-                .putString(Constants.PREF_ORDER, value)
-                .apply()
-        }
-
-        fun getOrder(context: Context): String {
-            return getSharedPreferences(context).getString(Constants.PREF_ORDER, Constants.ORDER_ASCENDING)!!
-        }
-
         fun sortUserListByFirstName(list: ArrayList<UserEntity>,isAscending:Boolean): ArrayList<UserEntity> {
             list.sortWith { lhs, rhs ->
                 if (lhs.firstName > rhs.firstName) -1 else if (lhs.firstName < rhs.firstName) 1 else 0
