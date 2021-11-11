@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DMart_Assignment</string>
+    <string name="sort_title">Sort By</string>
+
+
+    <array name="sort_options">
+        <item>FirstName (A-Z)</item>
+        <item>FirstName (Z-A)</item>
+        <item>LastName (A-Z)</item>
+        <item>LastName (Z-A)</item>
+    </array>
+</resources>
